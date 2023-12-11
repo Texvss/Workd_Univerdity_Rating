@@ -35,7 +35,7 @@ with tab1:
     """, font='')
     st.write('There are null values in dataframe.'
              ' if you want to check full dataframe click Nan!:')
-    df = pd.read_csv(r"C:\Users\Asus\Desktop\proekt\ratings\cwurData.csv")
+    df = pd.read_csv("cwurData.csv")
     nan = st.checkbox('NaN!')
     if nan:
         st.dataframe(df)
